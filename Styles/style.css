@@ -1,0 +1,720 @@
+#background_image1 {
+  background-image: url(../Images/background_image1.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#navigation_main {
+  margin: auto;
+  padding: 35px 0;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 120px;
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+}
+
+#navigation_main ul li {
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+#navigation_main ul li a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Style for the burger menu */
+
+/* Style for the burger menu */
+#burger_menu {
+  display: none;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Hide navigation links by default */
+#navigation_links {
+  display: block;
+}
+
+#images_div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#media_images {
+  padding: 10px;
+  display: none;
+}
+
+#navigation_main ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+#navigation_main ul li:hover::after {
+  width: 100%;
+}
+
+#main {
+  position: absolute;
+  width: 30%;
+  height: 50%;
+  bottom: 20%;
+  right: 33%;
+}
+
+#name_97 {
+  position: absolute;
+  font-size: 3rem;
+  left: 45%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+#name_bar {
+  position: absolute;
+  color: white;
+  font-size: 5rem;
+  top: 20%;
+  left: 39%;
+}
+
+#p_main {
+  position: absolute;
+  color: white;
+  font-size: 2vw;
+  top: 50%;
+  left: 15%;
+}
+
+.button-49,
+.button-49:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #8f1330 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #60d6df;
+  outline: transparent;
+  position: absolute;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  top: 70%;
+  left: 36%;
+}
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+
+  content: "ALTERNATE TEXT";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #00e6f6 3%,
+    #00e6f6 5%,
+    #ff013c 5%
+  );
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+  clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+#street_main {
+  position: absolute;
+  color: white;
+  top: 95%;
+  left: 29%;
+}
+
+#main_section {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#h2_section {
+  color: white;
+  position: absolute;
+  font-size: 4rem;
+  top: 10%;
+  left: 10%;
+  color: white;
+}
+
+#h4_section {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 1.2vw;
+  color: white;
+}
+
+#p_section {
+  position: absolute;
+  top: 10%;
+  left: 24%;
+  font-size: 0.8vw;
+  width: 25%;
+  color: white;
+}
+
+#image1_section {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  top: 10%;
+  left: 10%;
+  top: 50%;
+}
+
+#image2_section {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  top: 10%;
+  right: 10%;
+  bottom: 50%;
+}
+
+#div_section {
+  position: absolute;
+  top: 65%;
+  right: 20%;
+}
+
+#div_section {
+  color: white;
+}
+
+#span_div {
+  font-size: 2vw;
+}
+
+#span_cocktails {
+  font-size: 2.5vw;
+}
+#section_map {
+  position: absolute;
+  top: 100%;
+}
+
+#footer_main {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 20%;
+  top: 33.3%;
+}
+
+#footer_contact {
+  font-size: 2rem;
+  color: white;
+}
+
+#p_footer {
+  position: absolute;
+  top: 15%;
+  left: 70%;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#open_footer {
+  position: absolute;
+  font-size: 2rem;
+  color: white;
+}
+
+#p2_footer {
+  position: absolute;
+  color: white;
+  top: 15%;
+  left: 25%;
+}
+
+#menu_image {
+  background-image: url(../Images/menu_image.webp);
+  background-repeat: no-repeat;
+  height: 40%;
+  background-size: auto;
+  background-position: center;
+}
+
+#menu_background {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+#div_menu {
+  position: absolute;
+  font-size: 1vw;
+  display: inline-block;
+  color: white;
+  top: 50%;
+  left: 35%;
+}
+#Menu_menu {
+  font-size: 3vw;
+  color: white;
+}
+
+/* Accardion  */
+
+.menu {
+  max-width: 600px;
+  position: absolute;
+  top: 65%;
+  left: 35%;
+  color: moccasin;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  color: moccasin;
+}
+
+.accordion-btn {
+  background-color: #f4f4f4;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+
+.panel {
+  padding: 0 10px;
+  display: none;
+}
+
+.panel ul {
+  list-style-type: none;
+}
+
+.panel ul li {
+  padding: 5px 0;
+}
+
+.active {
+  display: block;
+}
+
+/* Accardion  */
+
+/* Slider  */
+
+.slider {
+  width: 100%;
+  height: 70%;
+}
+
+.sliders img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  background-size: auto;
+}
+
+.slider .active {
+  display: block !important;
+  animation: showImg 0.5s;
+}
+
+.left_arrow,
+.right_arrow {
+  font-size: 5vh;
+  position: absolute;
+  transform: translateY(-50%);
+  color: white;
+  cursor: pointer;
+}
+
+.left_arrow {
+  left: 30%;
+  bottom: 20%;
+  position: absolute;
+  position: absolute;
+}
+
+.right_arrow {
+  right: 30%;
+  bottom: 20%;
+  position: absolute;
+
+  size: auto;
+}
+
+@keyframes showImg {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slider  */
+
+#about_div {
+  position: relative;
+  left: 85%;
+  height: 23%;
+  width: 9%;
+  top: 10%;
+  color: black;
+}
+
+.user {
+  border: 2px solid black;
+  border-radius: 15%;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  right: 10%;
+}
+
+.user p {
+  margin: 0;
+}
+
+#p_about {
+  position: absolute;
+  width: 70%;
+  top: 120%;
+  font-size: 2vh;
+  left: 10%;
+  color: black;
+}
+
+#h2_about {
+  position: absolute;
+  font-size: 4rem;
+  left: 45%;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="radio"],
+input[type="checkbox"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Scroll To Top  */
+
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#scrollBtn:hover {
+  background-color: #555;
+}
+
+/* Scroll To Top  */
+
+#contact_image {
+  background-image: url(/Images/a1.jpg);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: red;
+}
+
+#contact_image {
+  background-image: url(../Images/contact_image.jpg);
+  background-repeat: no-repeat;
+  height: 40%;
+  background-size: cover;
+  background-position: center;
+}
+
+#contact_div {
+  width: 100%;
+  height: 130%;
+  background-color: black;
+}
+
+#section_map_contact {
+  position: absolute;
+  top: 150%;
+}
+
+.container {
+  width: 20%;
+  margin: 20px auto;
+  padding: 50px;
+  border: 1px solid blueviolet;
+  position: absolute;
+  border-radius: 5px;
+  background-color: blueviolet;
+  position: absolute;
+  top: 110%;
+  left: 37%;
+}
+
+.container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid blueviolet;
+  color: blueviolet;
+  border-radius: 5px;
+}
+.container ul {
+  list-style-type: none;
+  padding: 0;
+}
+.container li {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.container button {
+  padding: 10px 20px;
+  background-color: white;
+  color: blueviolet;
+  border: none blueviolet;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#feedback {
+  position: absolute;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  bottom: 120%;
+  right: 25%;
+  font-size: 3rem;
+}
+
+/* Registration  */
+
+#registration {
+  position: absolute;
+  font-size: 3rem;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  top: 45%;
+  left: 42.5%;
+}
+
+.registr_container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: blueviolet;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 41%;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: blueviolet;
+}
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+/* Registration  */
+
+#media_text {
+  margin: 5%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  display: none;
+}
+
+#media_p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  display: none;
+}
+
+/* Cookies */
+
+#cookieNotification {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+#cookieNotification button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Cookies */

@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/reset.css">
+    <link rel="stylesheet" href="Styles/media.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="contact_image">
+        <div id="navigation_main">
+            <a id="logo" href="index.html">BAR 97</a>
+            <ul id="navigation_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="burger_menu" onclick="toggleNavigation()">&#9776;</button>
+        </div>
+    </header>
+    <div id="media_text">A little about us</div>
+    <p id="media_p">The jukebox (a coin-operated record-player) was invented by the Pacific Phonograph Company in 1889
+        by its managers Louis Glass and his partner William S. Arnold.[11] The first was installed at the Palais Royale
+        Saloon, San Francisco on November 23, 1889, becoming an overnight sensation.[12]
+        The advent of the jukebox fueled the Prohibition-era boom in underground illegal speakeasy bars, which needed
+        music but could not afford a live band and needed precious space for paying customers.[13] Webster Hall stayed
+        open, with rumors circulating of Al Capone's involvement and police bribery.
+        From about 1900 to 1920, working class Americans would gather at honky tonks or juke joints to dance to music
+        played on a piano or a jukebox. With the repeal of Prohibition in February 1933, nightclubs were revived, such
+        as New York's 21 Club, Copacabana, El Morocco, and the Stork Club. These nightclubs featured big bands.
+        During America's Prohibition, new speakeasies and nightclubs appeared on a weekly basis. Texas Guinan opened and
+        ran many, and had many padlocked by the police. Harlem had its own clubs including the Cotton Club. Midtown New
+        York had a string of nightclubs, many named after bandleaders such as Paul Whiteman, Vincent Lopez, and Roger
+        Wolfe Kahn who opened Le Perroquet de Paris at a cost of $250,000. It was billed as America's most beautiful and
+        sophisticated nightclub and featured the young Kahn and his band most evenings.[14]</p>
+    <div id="contact_div">
+        <div class="container">
+            <h2 id="feedback">Send Feedback</h2>
+            <input type="text" id="taskInput" placeholder="Add text...">
+            <button onclick="addTask()">Add</button>
+            <ul id="taskList"></ul>
+        </div>
+        <h2 id="registration">Registration</h2>
+        <div class="registr_container">
+            <form id="registrationForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <div id="usernameError" class="error"></div>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <div id="emailError" class="error"></div>
+
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <div id="genderError" class="error"></div>
+
+                <label><input type="checkbox" id="agree" name="agree" required> I agree to the terms and
+                    conditions</label>
+                <div id="agreeError" class="error"></div>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="button" id="showPasswordButton">Show Password</button>
+                <div id="passwordError" class="error"></div>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <iframe id="section_map_contact"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.6897532054!2d-118.41173249999999!3d34.020479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sge!4v1707421099202!5m2!1sen!2sge"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe></section>
+        <div id="cookieNotification">
+            This website uses cookies. By continuing to use this site, you accept our <a href="#">cookie policy</a>.
+            <button onclick="acceptCookies()">Accept</button>
+            <button onclick="declineCookies()">Decline</button>
+        </div>
+        <script type="module" src="Scripts/index.js"></script>
+
+</body>
+
+</html>

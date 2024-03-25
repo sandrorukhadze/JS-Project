@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Styles/media.css">
+</head>
+
+<body>
+    <header id="menu_image">
+        <div id="navigation_main">
+            <a id="logo" href="index.html">BAR 97</a>
+            <ul id="navigation_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="burger_menu" onclick="toggleNavigation()">&#9776;</button>
+        </div>
+    </header>
+    <div class="slider">
+        <div class="sliders">
+            <img src="./Images/slider_image1.jpg" class="active" alt="slider 1">
+            <img src="./Images/slider_image2.jpg" alt="slider 2">
+            <img src="./Images/slider_image3.jpg" alt="slider 3">
+        </div>
+        <div class="left_arrow" onclick="prevSlide()">
+            < </div>
+                <div class="right_arrow" onclick="nextSlide()"> > </div>
+        </div>
+
+        <h2 id="h2_about">About Us</h2>
+
+        <div id="about_div">
+            <div id="userList"></div>
+        </div>
+        <div id="p_about">In the United States, New York increasingly became the national capital for tourism and
+            entertainment. Grand hotels were built for upscale visitors. New York's theater district gradually moved
+            northward during this half century, from The Bowery up Broadway through Union Square and Madison Square,
+            settling around Times Square at the end of the 19th century. Stars such as Edwin Booth and Lillian
+            Russell were among the early Broadway performers. Prostitutes served a wide variety of clientele, from
+            sailors on leave to playboys. The first nightclubs appeared in New York City in the 1840s and 1850s,
+            including McGlory's, and the Haymarket. They enjoyed a national reputation for vaudeville, live music, and
+            dance. They tolerated unlicensed liquor, commercial sex, and gambling cards, chiefly Faro. Practically
+            all gambling was illegal in the city (except upscale horseracing tracks), and regular payoffs to political
+            and police leadership was necessary. Prices were high and they were patronized by an upscale audience.
+            Timothy Gilfoyle called them "the first nightclubs". By contrast, Owney Geoghegan ran the toughest nightclub
+            in New York from 1880 to 1883. It catered to a downscale clientele and besides the usual illegal
+            liquor, gambling, and prostitution, it featured nightly fistfights and occasional shootings, stabbings, and
+            police raids. Webster Hall is credited as the first modern nightclub, being built in 1886 and starting
+            off as a "social hall", originally functioning as a home for dance and political activism events.
+            Reisenweber's Cafe is credited for introducing jazz and cabaret to New Yorkers.
+        </div>
+        <footer id="footer_main">
+            <p id="p_footer"><span id="footer_contact">Contact </span><br> <br> 123-456-7890 <br> info@mysite.com <br>
+                <br> Stay Connected <br> <br> <i class="fa-brands fa-instagram"> <i
+                        class="fa-brands fa-square-facebook"></i> <i class="fa-brands fa-tiktok"></i>
+            </p>
+            <p id="p2_footer"> <span id="open_footer">Opening Hours</span> <br> <br> <br> Mon - Fri: 8am - 8pm <br> <br>
+                Saturday: 9am - 7pm <br><br> Sunday: 9am - 8pm <br> <br> 500 Terry Francine St. San Francisco, CA 94158
+            </p>
+        </footer>
+        <script src="node_modules/axios/dist/axios.min.js"></script>
+        <script type="module" src="Scripts/index.js"></script>
+</body>
